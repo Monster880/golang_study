@@ -11,6 +11,4 @@ public class Solution {
         }
         return maxprofit;
     }
-} 121 {
-    
 }
