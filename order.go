@@ -3,3 +3,5 @@ sort.Slice(intSlice, func(i, j int) bool {
 	b := strconv.Itoa(intSlice[j])
 	return a+b > b+a
 })
+
+strconv.ParseInt(string, 10, 32)
