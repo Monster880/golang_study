@@ -29,6 +29,18 @@ func Constructor(capacity int) LRUCache {
 	return l
 }
 
+type LRUCache struct {
+	size       int
+	capacity   int
+	cache      map[int]*DLinkedNode
+	head, tail *DLinkedNode
+}
+
+type DLinkedNode struct {
+	key, value int
+	prev, next *DLinkedNode
+}
+
 func (this *LRUCache) Get(key int) int {
 	if _, ok := this.cache[key]; !ok {
 		return -1
