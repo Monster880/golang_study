@@ -16,7 +16,7 @@ func evalRPN(tokens []string) int {
 				stack = append(stack, num1-num2)
 			case "*":
 				stack = append(stack, num1*num2)
-			default:
+			case "/":
 				stack = append(stack, num1/num2)
 			}
 		}
